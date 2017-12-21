@@ -1,0 +1,410 @@
+html, body {
+    background-color: #d15252;
+}
+
+::selection {
+    color: #ffe985;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'steelfish';
+    src: url(../fonts/steelfish.ttf);
+}
+
+@font-face {
+    font-family: 'steelfish italic';
+    src: url(../fonts/steelfish_italic.ttf);
+}
+
+@font-face {
+    font-family: 'din';
+    src: url(../fonts/din.ttf);
+}
+
+/* BOMBSHELL TEXT ON SIDE */
+
+.name_side {
+    font-family: steelfish italic;
+    font-size: 250px;
+    color: #1c263d;
+}
+
+#bombshell_side {
+    -webkit-transform: rotate(90deg);
+    position: fixed;
+    left: -325px;
+    top: 240px;
+    z-index: -1;
+}
+
+/* NAVIGATION */
+
+a.nav {
+    text-decoration: none;
+    font-family: steelfish;
+    font-size: 36px;
+    color: #873516;
+    font-weight: normal;
+    display: block;
+    transition: .5s;
+}
+
+a.nav:hover {
+    padding-right: 15px;
+    color: #ffe985;
+    transition: .5s;
+}
+
+#nav {
+    position: fixed;
+    width: 100px;
+    right: 50px;
+    top: 20px;
+    text-align: right;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+/* MAIN BODY TEXT */
+
+p, body {
+    font-family: din;
+    font-size: 12px;
+    color: #352d2e;
+}
+
+p.desc_text {
+    font-size: 15px;
+}
+
+h1 {
+    font-family: steelfish italic
+}
+
+.emphasis {
+    font-family: steelfish italic;
+    font-size: 72px;
+    color: #1c263d;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.emphasis_small {
+    font-family: din;
+    font-size: 12px;
+    color: #873516;
+}
+
+/* MAIN BODY DIV */
+
+#about {
+    position: absolute;
+    width: 900px;
+    height: 2000px;
+    top: 40px;
+    left: 50%;
+    margin-left: -450px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* FIRST PART OF WEBPAGE */
+
+#img1 {
+    width: 300px;
+    height: auto;
+}
+
+#img1_div {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    float: right;
+    margin-left: 465px;
+    margin-top: 50px;
+}
+
+#img2 {
+    width: 300px;
+    height: auto;
+}
+
+#img2_div {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    float: left;
+    margin-left: 50px;
+    margin-top: 380px;
+}
+
+.emphasis_div1 {
+    width: 525px;
+    height: auto;
+    position: absolute;
+    float: left;
+    margin-left: 50px;
+}
+
+.align_left {
+    text-align: left;
+}
+
+.align_right {
+    text-align: right;
+}
+
+.exclusive {
+    margin-left: 160px;
+}
+
+.seeking {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.emphasis_div2 {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    float: left;
+    margin-top: 550px;
+    margin-left: 263px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.sizes {
+    text-align: left;
+    line-height: 60px;
+    margin-left: 15px;
+}
+
+/* BRANDS, SLIDESHOW */
+
+#slides {
+    display: none;
+    width: 700px;
+    height: 530px;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+}
+
+.slidesjs-pagination {
+    display: none;
+}
+
+.slidesjs-pagination li {
+    display: none;
+}
+
+.slidesjs-next {
+    display: inline-block;
+    position: absolute;
+    background-image: url(../images/right_arrow.svg);
+    background-repeat: no-repeat;
+    color: transparent;
+    width: 85px;
+    height: 155px;
+    float: left;
+    left: 615px;
+    top: 50%;
+    margin-top: -150px;
+}
+
+.slidesjs-previous {
+    display: inline-block;
+    position: absolute;
+    background-image: url(../images/left_arrow.svg);
+    background-repeat: no-repeat;
+    color: transparent;
+    width: 85px;
+    height: 155px;
+    float: left;
+    top: 50%;
+    margin-top: -150px;
+}
+
+#brands {
+    width: 900px;
+    height: 530px;
+    position: absolute;
+    margin-top: 910px;
+    padding-top: 50px;
+}
+
+#brand_names {
+    font-family: steelfish italic;
+    font-size: 150px;
+    color: #ffe985;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    text-align: center;
+    width: 430px;
+    left: 50%;
+    margin-left: -215px;
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#persona {
+    font-family: steelfish italic;
+    font-size: 150px;
+    color: #ffe985;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    text-align: center;
+    width: 430px;
+    left: 50%;
+    margin-left: -215px;
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.brand_image {
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+}
+
+#brand_desc {
+    width: 520px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -260px;
+    margin-top: 430px;
+    text-align: center;
+    line-height: 14px;
+}
+
+/* LOCATION */
+
+#location {
+    width: 900px;
+    position: absolute;
+    margin-top: 1550px;
+    padding-top: 50px;
+}
+
+#find_us {
+    width: 100px;
+    position: relative;
+    left: 500px;
+}
+
+#address {
+    width: 600px;
+    text-align: center;
+    margin-left: 250px;
+}
+
+#open {
+    width: 400px;
+    position: relative;
+    left: 350px;
+    margin-top: 12px;
+}
+
+#closed {
+    width: 200px;
+    position: relative;
+    left: 430px;
+    margin-top: 5px;
+}
+
+/* CONTACT */
+
+#contact {
+    position: absolute;
+    width: 900px;
+    top: 1950px;
+}
+
+#call {
+    position: relative;
+    width: 200px;
+    left: 100px;
+}
+
+#number {
+    width: 400px;
+    margin-left: 130px;
+}
+
+#comment {
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 12px;
+}
+
+/* CONTACT -> COMMENT/EMAIL FORM*/
+
+#form {
+    position: absolute;
+    left: 50%;
+    width: 750px;
+    margin-left: -375px;
+    margin-top: 100px;
+}
+
+input[type=text], select {
+    width: 742px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: #873516;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #efe4e4;
+}
+
+input[type=text-half], select {
+    width: 367px;
+    float: left;
+    padding: 12px 20px;
+    margin: 8px 8px 8px 0px;
+    color: #873516;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #efe4e4;
+}
+
+textarea, select {
+    width: 700px;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: #873516;
+    background-color: #efe4e4;
+}
+
+input[type=submit] {
+    width: 150px;
+    background-color: #873516;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 8px;
+}
+
+/* JS SWITCHES */
+
+.yellow {
+    color: #ffe985;
+}
